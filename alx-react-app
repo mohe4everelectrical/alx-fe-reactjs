@@ -2,3 +2,8 @@ mkdir alx-fe-reactjs
 cd alx-fe-reactjs
 # (Assuming you initialized the git repo and cloned it here, 
 # but for local creation, these two steps suffice)
+
+npm create vite@latest alx-react-app -- --template react
+cd alx-react-app
+npm install
+npm run dev
