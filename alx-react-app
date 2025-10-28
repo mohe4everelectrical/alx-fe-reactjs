@@ -1,0 +1,4 @@
+mkdir alx-fe-reactjs
+cd alx-fe-reactjs
+# (Assuming you initialized the git repo and cloned it here, 
+# but for local creation, these two steps suffice)
