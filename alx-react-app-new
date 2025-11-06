@@ -1,0 +1,274 @@
+import React from 'react';
+
+const Header = () => {
+  return (
+    <header style={{
+      backgroundColor: '#2c3e50',
+      color: 'white',
+      textAlign: 'center',
+      padding: '20px 0',
+      boxShadow: '0 2px 5px rgba(0,0,0,0.1)',
+      borderBottom: '3px solid #3498db'
+    }}>
+      <h1 style={{
+        margin: 0,
+        fontSize: '2.5rem',
+        fontWeight: 'bold',
+        textShadow: '2px 2px 4px rgba(0,0,0,0.3)'
+      }}>
+        My Favorite Cities
+      </h1>
+      <p style={{
+        margin: '10px 0 0 0',
+        fontSize: '1.1rem',
+        opacity: 0.9
+      }}>
+        Discover amazing places around the world
+      </p>
+    </header>
+  );
+};
+
+export default Header;
+
+
+
+
+import React from 'react';
+
+const UserProfile = (props) => {
+  return (
+    <div style={{
+      border: '2px solid #e1e8ed',
+      borderRadius: '10px',
+      padding: '20px',
+      margin: '15px',
+      backgroundColor: '#f8f9fa',
+      boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+      transition: 'transform 0.2s ease-in-out'
+    }}>
+      <h2 style={{
+        color: '#2c3e50',
+        fontSize: '1.8rem',
+        marginBottom: '15px',
+        borderBottom: '2px solid #3498db',
+        paddingBottom: '8px'
+      }}>
+        {props.name}
+      </h2>
+      <p style={{
+        fontSize: '1.1rem',
+        margin: '8px 0',
+        color: '#34495e'
+      }}>
+        Age: <span style={{
+          fontWeight: 'bold',
+          color: '#e74c3c',
+          fontSize: '1.2rem'
+        }}>{props.age}</span>
+      </p>
+      <p style={{
+        fontSize: '1rem',
+        lineHeight: '1.6',
+        color: '#7f8c8d',
+        fontStyle: 'italic',
+        backgroundColor: '#ecf0f1',
+        padding: '12px',
+        borderRadius: '5px',
+        borderLeft: '4px solid #3498db'
+      }}>
+        {props.bio}
+      </p>
+    </div>
+  );
+};
+
+export default UserProfile;
+
+
+import React from 'react';
+
+const MainContent = () => {
+  return (
+    <main style={{
+      padding: '30px',
+      backgroundColor: '#ecf0f1',
+      minHeight: '400px',
+      background: 'linear-gradient(135deg, #ecf0f1 0%, #bdc3c7 100%)'
+    }}>
+      <div style={{
+        maxWidth: '1200px',
+        margin: '0 auto',
+        backgroundColor: 'white',
+        borderRadius: '15px',
+        padding: '30px',
+        boxShadow: '0 8px 25px rgba(0,0,0,0.1)'
+      }}>
+        <h2 style={{
+          color: '#2c3e50',
+          textAlign: 'center',
+          fontSize: '2rem',
+          marginBottom: '25px',
+          textTransform: 'uppercase',
+          letterSpacing: '1px'
+        }}>
+          Welcome to Our Travel Platform
+        </h2>
+        <p style={{
+          fontSize: '1.1rem',
+          lineHeight: '1.7',
+          color: '#34495e',
+          textAlign: 'center',
+          marginBottom: '20px'
+        }}>
+          Explore the most beautiful cities around the world and discover 
+          hidden gems that will make your travel experience unforgettable.
+        </p>
+        <div style={{
+          display: 'flex',
+          justifyContent: 'space-around',
+          flexWrap: 'wrap',
+          marginTop: '30px'
+        }}>
+          <div style={{
+            backgroundColor: '#3498db',
+            color: 'white',
+            padding: '20px',
+            borderRadius: '8px',
+            margin: '10px',
+            flex: '1',
+            minWidth: '200px',
+            textAlign: 'center'
+          }}>
+            <h3 style={{ margin: '0 0 10px 0' }}>🌍 Global Reach</h3>
+            <p style={{ margin: 0 }}>100+ Cities</p>
+          </div>
+          <div style={{
+            backgroundColor: '#e74c3c',
+            color: 'white',
+            padding: '20px',
+            borderRadius: '8px',
+            margin: '10px',
+            flex: '1',
+            minWidth: '200px',
+            textAlign: 'center'
+          }}>
+            <h3 style={{ margin: '0 0 10px 0' }}>⭐ Top Rated</h3>
+            <p style={{ margin: 0 }}>5-Star Experiences</p>
+          </div>
+          <div style={{
+            backgroundColor: '#2ecc71',
+            color: 'white',
+            padding: '20px',
+            borderRadius: '8px',
+            margin: '10px',
+            flex: '1',
+            minWidth: '200px',
+            textAlign: 'center'
+          }}>
+            <h3 style={{ margin: '0 0 10px 0' }}>💰 Best Prices</h3>
+            <p style={{ margin: 0 }}>Guaranteed Value</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+};
+
+export default MainContent;
+
+
+import React from 'react';
+
+const Footer = () => {
+  return (
+    <footer style={{
+      backgroundColor: '#34495e',
+      color: 'white',
+      textAlign: 'center',
+      padding: '25px 20px',
+      marginTop: 'auto',
+      borderTop: '5px solid #3498db'
+    }}>
+      <div style={{
+        maxWidth: '1200px',
+        margin: '0 auto'
+      }}>
+        <p style={{
+          margin: '0 0 15px 0',
+          fontSize: '1.1rem',
+          fontWeight: 'bold'
+        }}>
+          © 2024 My Favorite Cities App. All rights reserved.
+        </p>
+        <div style={{
+          display: 'flex',
+          justifyContent: 'center',
+          gap: '20px',
+          flexWrap: 'wrap'
+        }}>
+          <span style={{
+            padding: '8px 15px',
+            backgroundColor: 'rgba(255,255,255,0.1)',
+            borderRadius: '5px',
+            cursor: 'pointer',
+            transition: 'background-color 0.3s'
+          }}>
+            Privacy Policy
+          </span>
+          <span style={{
+            padding: '8px 15px',
+            backgroundColor: 'rgba(255,255,255,0.1)',
+            borderRadius: '5px',
+            cursor: 'pointer',
+            transition: 'background-color 0.3s'
+          }}>
+            Terms of Service
+          </span>
+          <span style={{
+            padding: '8px 15px',
+            backgroundColor: 'rgba(255,255,255,0.1)',
+            borderRadius: '5px',
+            cursor: 'pointer',
+            transition: 'background-color 0.3s'
+          }}>
+            Contact Us
+          </span>
+        </div>
+        <p style={{
+          margin: '15px 0 0 0',
+          fontSize: '0.9rem',
+          opacity: 0.8
+        }}>
+          Made with ❤️ for travel enthusiasts worldwide
+        </p>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
+
+import React from 'react';
+import Header from './components/Header';
+import UserProfile from './components/UserProfile';
+import MainContent from './components/MainContent';
+import Footer from './components/Footer';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+      <Header />
+      <UserProfile 
+        name="John Traveler" 
+        age={28} 
+        bio="Passionate explorer who loves discovering new cultures and hidden gems around the world. Always planning the next adventure!"
+      />
+      <MainContent />
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
